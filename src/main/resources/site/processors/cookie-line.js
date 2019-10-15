@@ -1,5 +1,5 @@
 var portal = require('/lib/xp/portal');
-var thymeleaf = require('/lib/xp/thymeleaf');
+var thymeleaf = require('/lib/thymeleaf');
 
 function ensureArray(contribution) {
     if(!contribution) {
@@ -11,7 +11,7 @@ function ensureArray(contribution) {
     return contribution;
 }
 
-exports.responseFilter = function(req, res) {
+exports.responseProcessor = function(req, res) {
     var cookieName = app.name + '-cookies-accepted';
 
     // If cookie is set, no cookie line is needed

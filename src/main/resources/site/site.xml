@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-  <config>
+  <form>
     <input name="cookie-line-layout" type="ComboBox">
         <label>Design</label>
         <occurrences minimum="1" maximum="1" />
@@ -39,8 +39,8 @@
         <label>Read more link</label>
         <occurrences minimum="1" maximum="1" />
     </input>
-  </config>
-  <filters>
-    <response-filter name="cookie-line" order="10"/>
-  </filters>
+  </form>
+  <processors>
+    <response-processor name="cookie-line" order="10"/>
+  </processors>
 </site>

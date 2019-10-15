@@ -4,3 +4,6 @@ build
 
 # OS specifics
 .DS_Store
+
+# Enonic sandbox
+.enonic
